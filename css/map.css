@@ -1,0 +1,48 @@
+.map-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.map-container h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.map-container p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+address {
+    font-style: normal;
+    margin-bottom: 30px;
+    font-size: 1.3em; 
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.map-canvas {
+    width: 100%;
+    height: 550px; 
+    border: 1px solid var(--border-color);
+    border-radius: 12px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+    margin-top: 20px;
+    overflow: hidden; 
+}
+
+
+@media (max-width: 768px) {
+    .map-canvas {
+        height: 400px; 
+    }
+
+    .map-container h1 {
+        font-size: 2.5em;
+    }
+
+    address {
+        font-size: 1.1em;
+    }
+}
