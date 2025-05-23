@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Concesionario de Autos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://us.123rf.com/450wm/themoderncanvas/themoderncanvas1901/themoderncanvas190100012/118845971-icono-de-super-coche-de-concesionario-de-estilo-autom%C3%A1tico-con-silueta-de-icono-de-veh%C3%ADculo-deportiv.jpg" alt="Logo Concesionario">
+            </div>
+            <ul>
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="catalog.html">Catálogo</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="map.html">Ubicación</a></li>
+                <li><a href="minigame.html">Minijuego</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <h1>Contáctanos</h1>
+        <p>Estamos aquí para ayudarte a encontrar el auto perfecto. Envíanos un mensaje o visítanos.</p>
+
+        <div class="contact-info">
+            <div class="info-card">
+                <h3>Teléfono</h3>
+                <p><a href="tel:+1234567890">+51 984 484 125</a></p>
+            </div>
+            <div class="info-card">
+                <h3>Email</h3>
+                <p><a href="mailto:info@concesionario.com">autostyle@concesionario.com</a></p>
+            </div>
+            <div class="info-card">
+                <h3>Dirección</h3>
+                <p>La Molina, Av. la Fontana 1250, Lima 15024</p>
+            </div>
+            <div class="info-card">
+                <h3>Horario</h3>
+                <p>Lunes a Viernes: 9 AM - 6 PM</p>
+                <p>Sábados: 10 AM - 2 PM</p>
+            </div>
+        </div>
+
+        <section class="contact-form-section">
+            <h2>Envíanos un Mensaje</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Asunto:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+            <div id="formMessage" class="form-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Concesionario de Autos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minijuego - Adivina el Precio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/minigame.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://us.123rf.com/450wm/themoderncanvas/themoderncanvas1901/themoderncanvas190100012/118845971-icono-de-super-coche-de-concesionario-de-estilo-autom%C3%A1tico-con-silueta-de-icono-de-veh%C3%ADculo-deportiv.jpg" alt="Logo Concesionario">
+            </div>
+            <ul>
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="catalog.html">Catálogo</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="map.html">Ubicación</a></li>
+                <li><a href="minigame.html">Minijuego</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="minigame-container">
+        <h1>Minijuego: Adivina el Precio del Coche</h1>
+        <p>Adivina el precio exacto del coche para ganar.</p>
+
+        <div class="game-area">
+            <div class="car-display">
+                <img id="gameCarImage" src="https://via.placeholder.com/400x250?text=Coche+Misterioso" alt="Coche para adivinar">
+                <h3 id="gameCarName">Coche Misterioso</h3>
+            </div>
+
+            <div class="guess-input">
+                <label for="priceGuess">Tu Adivinanza ($):</label>
+                <input type="number" id="priceGuess" min="0" step="1000" placeholder="Ej: 35000">
+                <button id="submitGuess">Adivinar</button>
+            </div>
+
+            <p id="gameMessage" class="game-message"></p>
+            <button id="newGameButton" class="hidden">Jugar de Nuevo</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Concesionario de Autos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/minigame.js"></script>
+</body>
+</html>

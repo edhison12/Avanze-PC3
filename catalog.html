@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Concesionario de Autos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://us.123rf.com/450wm/themoderncanvas/themoderncanvas1901/themoderncanvas190100012/118845971-icono-de-super-coche-de-concesionario-de-estilo-autom%C3%A1tico-con-silueta-de-icono-de-veh%C3%ADculo-deportiv.jpg" alt="Logo Concesionario">
+            </div>
+            <ul>
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="catalog.html">Catálogo</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="map.html">Ubicación</a></li>
+                <li><a href="minigame.html">Minijuego</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="catalog-container">
+        <h1>Nuestro Catálogo de Vehículos</h1>
+
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Buscar por modelo o marca...">
+            <select id="typeFilter">
+                <option value="all">Todos los tipos</option>
+                <option value="sedan">Sedán</option>
+                <option value="suv">SUV</option>
+                <option value="coupe">Cupé</option>
+                <option value="hatchback">Hatchback</option>
+                <option value="pickup">Pick-up</option>
+            </select>
+            <select id="priceFilter">
+                <option value="all">Todos los precios</option>
+                <option value="0-20000">Hasta $20,000</option>
+                <option value="20001-40000">$20,001 - $40,000</option>
+                <option value="40001-60000">$40,001 - $60,000</option>
+                <option value="60001-more">Más de $60,000</option>
+            </select>
+            <button id="applyFilters">Aplicar Filtros</button>
+        </div>
+
+        <div class="car-listings" id="carListings">
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Concesionario de Autos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/catalog.js"></script>
+</body>
+</html>
